@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eventos DOM 02</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: rgb(187, 187, 187);
+            font-weight: bold;
+        }
+
+        input {
+            padding: 5px;
+            border-radius: 10px;
+            border-color: transparent;
+        }
+    </style>
+</head>
+<body>
+    <h1>Subtração de números</h1>
+    <input type="number" name="nm01" id="nm01"> -
+    <input type="number" name="nm02" id="nm02">
+    <input type="button" value="Subtrair" id="subtrair">
+    <p id="res">Resultado</p>
+    
+    <script>
+        var sub = window.document.getElementById("subtrair")
+        sub.addEventListener("click", subb)
+
+        function subb() {
+            var numero1 = window.document.querySelector("input#nm01")
+            var numero2 = window.document.querySelector("input#nm02")
+            var res = window.document.getElementById("res")
+            var n1 = Number(numero1.value)
+            var n2 = Number(numero2.value)
+            var s = n1 - n2 
+            res.innerHTML = `A subtração de ${n1} - ${n2} é = ${s}`
+        }
+    </script>
+</body>
+</html>
