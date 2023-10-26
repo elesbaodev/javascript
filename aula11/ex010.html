@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            font: normal 10pt Arial;
+        }
+    </style>
+    <title>DENTRAN</title>
+</head>
+<body>
+    <h1>Sistema de Multas</h1>
+    <p>Quantos km você passou por aqui?</p>
+   Velocidade do carro: <input type="number" name="km" id="km"> Km/h
+    <input type="button" value="Enviar" onclick="calcular()">
+    <p id="res">Resultado</p> 
+    <script>
+        function calcular() {
+            var vel = window.document.getElementById("km")
+            var res = window.document.querySelector("p#res")
+            var vels = Number(vel.value)
+            res.innerHTML = `<p>Sua velocidade atual é de <strong>${vels}Km/h</strong></p>`
+            if (vels > 60) {
+                res.innerHTML += `<p>Você está <strong>MULTADO</strong> por excesso de velocidade</p>`
+            }
+            res.innerHTML += `<p>Dirija sempre com cinto de segurança!</p>`
+        }
+    </script>
+</body>
+</html>
