@@ -4,6 +4,7 @@ var minuts = horas.getMinutes()
 var agora = horas.getHours()
 var horad = window.document.querySelector("div.horass")
 var img01 = window.document.getElementById("img")
+var pa = window.document.getElementById("p1").innerHTML = `Agora são ${agora}:${minuts} `
 
 if (agora < 12) {
     document.body.style.background = "rgb(194, 129, 85)"
@@ -18,5 +19,4 @@ if (agora < 12) {
 
 }
 
-var pa = window.document.getElementById("p1").innerHTML = `Agora são ${agora}:${minuts} `
 
