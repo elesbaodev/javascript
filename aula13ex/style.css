@@ -1,0 +1,57 @@
+@charset "UTF-8";
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    color: white;
+    background-color: rgb(35, 137, 196);
+    text-align: center;
+    font: normal 15pt Arial;
+    margin: 10px;
+}
+
+div > #p1 {
+    color: black;
+}
+
+header {
+    padding: 10px;
+
+}
+
+section {
+    color: black;
+    border-radius: 10px;
+    height: 40vh;
+    width: 30vw;
+    margin: auto;
+    background-color: white;
+    margin-bottom: 10px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.493);
+}
+
+div > p {
+    padding: 10px;
+    text-align: left;
+}
+
+div#img {
+    display: block;
+    transform: translate(0px, 86px);
+}
+
+img {
+    border-radius:  63%;
+}
+
+#verificar {
+    transform: translate(-249px);
+}
+
+footer {
+    font-style: italic;
+
+}
