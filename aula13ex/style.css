@@ -48,7 +48,9 @@ img {
 }
 
 #verificar {
-    transform: translate(-249px);
+    margin-left: 7px;
+    display: block;
+    text-align: left;
 }
 
 footer {
