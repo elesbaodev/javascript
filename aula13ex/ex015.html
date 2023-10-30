@@ -12,15 +12,19 @@
     </header>
     <section>
         <div>
-            <p id="nascc">Ano de Nascimento: <input type="number" name="anonasc" id="nasc"></p>
-            <p>Sexo: <input type="radio" name="sex" id="masc"> Masculino <input type="radio" name="sex" id="fem"> Feminino</p>
-            <input id="verificar" type="button" value="Verificar" id="send" onclick="ClicouOn()">
-            <p>Preencha os dados acima para ver o resultado!</p>
+            <p id="nascc">Ano de Nascimento: <input type="number" name="anonasc" id="nasc" min="4" required></p>
+            <p>Sexo: <input type="radio" name="sex" id="masc" checked> 
+                <label for="masc">Masculino</label>
+                <input type="radio" name="sex" id="fem">
+                <label for="fem">Feminino</label>
+            </p>
+            <p><input id="verificar" type="button" value="Verificar" id="send" onclick="ClicouOn()"></p>
+            <p id="res">Preencha os dados acima para ver o resultado!</p>
         </div>
+            <p id="text"></p>
+            <div id="img">
 
-        <div id="img"> 
-            <p id="text">Detectamos</p>
-        </div>
+            </div>
     </section>
     <footer>
         <p>&copy; Elesbão</p>
