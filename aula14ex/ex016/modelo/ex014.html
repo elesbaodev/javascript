@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Super contador</title>
+</head>
+<body>
+    <header>
+        <h1>Vamos contar</h1>
+    </header>
+    <section>
+        <div class="objects" id="objeto">
+            <label for="inicio">Início:</label>
+            <input  type="number"  name="inicio" id="inicio">
+        </div>
+
+        <div class="objects">
+            <label for="fim">Fim:</label>
+            <input type="number" name="fim" id="fim"> 
+        </div>
+        <div class="objects">
+            <label for="passo">Passo:</label>
+                <input type="number" name="passo1" id="passo">
+        </div>
+        <input type="button" id="contar" value="Contar" onclick="Contar()">
+
+        <div id="saida" style="text-align: left; padding: 10px;">Preparendo contagem...</div>
+        
+    </section>
+    <footer>
+        <p>&copy; Elesbão</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
