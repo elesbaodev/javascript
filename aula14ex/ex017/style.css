@@ -23,6 +23,7 @@ header {
 }
 
 section {
+    color: black;
     border-radius: 10px;
     height: 40vh;
     width: 30vw;
@@ -32,13 +33,17 @@ section {
     box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.493);
 }
 
-div#img {
-    display: block;
-    transform: translate(0px, 86px);
+div#entrada > p {
+    padding: 20px;
+    text-align: left;
 }
 
-img {
-    border-radius:  63%;
+ #gerar {
+    margin-left: 5px;
+}
+
+iframe {
+    display: block;
 }
 
 footer {

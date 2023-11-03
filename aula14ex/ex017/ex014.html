@@ -3,19 +3,20 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="estilos/style.css">
-    <title>Hora do dia</title>
+    <link rel="stylesheet" href="style.css">
+    <title>Tabuada</title>
 </head>
 <body>
     <header>
-        <h1>Titúlo</h1>
+        <h1>Tabuada</h1>
     </header>
     <section>
-        <div>
-            <p></p>
+        <div id="entrada">
+            <p>Número: <input type="number" name="numero1" id="numero01"><input type="button" value="Gerar Tabuada" id="gerar" onclick="Tabuada()"></p>
         </div>
 
-        <div id="img"> 
+        <div id="saida">
+            <iframe src="telatabuada.html" frameborder="0"></iframe>
             
         </div>
     </section>
