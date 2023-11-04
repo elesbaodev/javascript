@@ -14,7 +14,6 @@ function Contar() {
     }
       if (n1 && n2 > 1 && n3 == 0) {
         for(n1 = Number(numero01.value); n1 <= n2; n1++) {
-            var cont = "🏴󠁥󠁴󠁳󠁮󠁿"
            saida.innerHTML =  novoHTML += n1 + "\u{1F449}"
            
            

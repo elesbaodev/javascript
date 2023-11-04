@@ -12,11 +12,16 @@
     </header>
     <section>
         <div id="entrada">
-            <p>Número: <input type="number" name="numero1" id="numero01"><input type="button" value="Gerar Tabuada" id="gerar" onclick="Tabuada()"></p>
+            <p>Número: <input type="number" name="numero1" id="numero01">
+                <input type="button" value="Gerar Tabuada" id="gerar" onclick="Tabuada()"></p>
         </div>
 
-        <div id="saida">
-            <iframe src="telatabuada.html" frameborder="0"></iframe>
+        <div>
+            <select style="display: block; margin-left: 10px;" name="tabuada" id="saida" size="10">
+                <option>Digite um número acima &#9757;</option>
+            </select>
+            
+            
             
         </div>
     </section>
