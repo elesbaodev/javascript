@@ -38,6 +38,12 @@ div#img {
     transform: translate(0px, 86px);
 }
 
+select {
+    margin: 10px;
+    display: block;
+    width: 10vw;
+}
+
 img {
     border-radius:  63%;
 }
@@ -46,3 +52,5 @@ footer {
     font-style: italic;
 
 }
+
+p#inicio {padding: 10px;}
